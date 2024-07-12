@@ -1,4 +1,4 @@
-numbers = []
+nums = []
 
 print("Enter numbers to add to the list. Type 'done' when you are finished.")
 
@@ -9,18 +9,18 @@ while True:
         break
 
     number = int(user_input)
-    numbers.append(number)
+    nums.append(number)
 
-print("The numbers in the list are:", numbers)
+print("The numbers in the list are:", nums)
 
-def sort(numbers):
-    for i in range(len(numbers)-1,0,-1):
+def sort(nums):
+    for i in range(len(nums)-1, 0, -1):
         for j in range(i):
-            if numbers[j] > numbers[j+1]:
-                temp = numbers[j]
-                numbers[j] = numbers[j+1]
-                numbers[j+1] = temp
+            if nums[j] > nums[j+1]:
+                temp = nums[j]
+                nums[j] = nums[j+1]
+                nums[j+1] = temp
 
 
-sort(numbers)
-print("Numbers after sorting are:",numbers)
+sort(nums)
+print("Numbers after sorting are:", nums)
